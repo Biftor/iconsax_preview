@@ -38,7 +38,8 @@ class MyHomePage extends StatelessWidget {
               IconData icon = icons[index];
               return IconButton(
                 onPressed: () {
-                  String dataToCopy = "decimal: ${icon.codePoint}\nfull: $icon";
+                  String dataToCopy =
+                      "Number: $index\ndecimal: ${icon.codePoint}\nfull: $icon";
                   Clipboard.setData(ClipboardData(text: dataToCopy));
                   final snackBar = SnackBar(
                     content: Text('Icon data copied to clipboard'),
@@ -46,7 +47,21 @@ class MyHomePage extends StatelessWidget {
                   );
                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 },
-                icon: Icon(icon),
+                icon: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(icon),
+                    SizedBox(
+                      height: 4.0,
+                    ),
+                    Text(
+                      index.toString(),
+                      style:
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                    )
+                  ],
+                ),
               );
             }),
       ),
