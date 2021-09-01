@@ -40,6 +40,11 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () {
                   String dataToCopy = "decimal: ${icon.codePoint}\nfull: $icon";
                   Clipboard.setData(ClipboardData(text: dataToCopy));
+                  final snackBar = SnackBar(
+                    content: Text('Icon data copied to clipboard'),
+                    duration: Duration(milliseconds: 250),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 },
                 icon: Icon(icon),
               );
