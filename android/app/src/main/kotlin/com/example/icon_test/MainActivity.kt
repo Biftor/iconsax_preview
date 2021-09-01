@@ -1,4 +1,4 @@
-package com.example.icon_test
+package com.example.iconsax_preview
 
 import io.flutter.embedding.android.FlutterActivity
 
