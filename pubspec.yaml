@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
@@ -33,13 +34,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
-  fonts:
-    - family: iconsax
-      fonts:
-        - asset: assets/fonts/iconsax.ttf
   uses-material-design: true
-
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

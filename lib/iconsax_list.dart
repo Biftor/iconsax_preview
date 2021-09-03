@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:iconsax_preview/iconsax.dart';
+import 'package:iconsax/iconsax.dart';
 
 class IconSaxData {
   List<IconData> icons = [
