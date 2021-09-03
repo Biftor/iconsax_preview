@@ -1,6 +1,6 @@
 {
-    "name": "icon_test",
-    "short_name": "icon_test",
+    "name": "iconsax_preview",
+    "short_name": "iconsax_preview",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
